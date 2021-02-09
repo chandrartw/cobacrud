@@ -3,6 +3,7 @@ package infra
 import (
 	"github.com/jinzhu/gorm"
 	"github.com/jinzhu/gorm/dialects/postgres"
+	"github.com/chandrartw/cobacrud/model"
 )
 
 func LoadPostgresSQLDB() *gorm.DB {
