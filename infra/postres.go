@@ -1,7 +1,7 @@
 package infra
 
 import (
-	"github/jinzhu/gorm"
+	"github.com/jinzhu/gorm"
 	"github.com/jinzhu/gorm/dialects/postgres"
 )
 

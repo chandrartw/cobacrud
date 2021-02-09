@@ -1,11 +1,13 @@
 package controller
 
-import {
+import (
 	"github.com/gin-gonic/gin"
 	"encoding/hex"
 	"net/http"
 	"time"
-}
+	"github.com/chandrartw/cobacrud/util"
+	"github.com/chandrartw/cobacrud/model"
+)
 
 func (idb *InDB) CreateCustomer(ctx *gin.Context){
 	var (
@@ -78,7 +80,7 @@ func (idb *InDB) DeleteUser(ctx *gin.Context) {
 	util.ResponseSuccessCustomMessage(ctx, http.StatusOK, "Success Deleted")
 }
 
-unc (idb *InDB) UpdateUser(ctx *gin.Context) {
+func (idb *InDB) UpdateUser(ctx *gin.Context) {
 	ca_no := ctx.Query("CA_No")
 
 	var (

@@ -1,14 +1,15 @@
 package controller
 
 import (
-	"github/jinzhu/gorm"
+	"github.com/jinzhu/gorm"
+	"github.com/chandrartw/cobacrud/infra"
 )
 
 type InDB struct {
 	DB *gorm.DB
 }
 
-func ConnectDB *InDB{
+func ConnectDB() *InDB{
 	db := infra.LoadPostgresSQLDB()
 	return inDB
 }

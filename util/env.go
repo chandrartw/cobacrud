@@ -16,7 +16,7 @@ func LoadEnv() {
 	envfile := os.Getenv("ENV_FILE")
 	err := godotenv.Load(envfile)
 	if err != nil {
-		fmt.Printlf("no env file loaded %v\n", err)
+		fmt.Printf("no env file loaded %v\n", err)
 	} else {
 		fmt.Printf("env file loaded :%v\n", envfile)
 	}

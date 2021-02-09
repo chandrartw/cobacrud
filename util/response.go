@@ -4,7 +4,7 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
-func ResponseError(ctx *gin.Context, status int, debug string, msg string)
+func ResponseError(ctx *gin.Context, status int, debug string, msg string){
 	result := gin.H{
 		"result" : msg,
 		"debug" : debug,

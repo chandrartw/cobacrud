@@ -3,8 +3,6 @@ package server
 import (
 	"os"
 	"github.com/gin-gonic/gin"
-	"github.com/chandrartw/cobacrud/auth"
-	"github.com/chandrartw/cobacrud/middleware"
 	"github.com/chandrartw/cobacrud/controller"
 )
 
